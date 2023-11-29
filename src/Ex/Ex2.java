@@ -5,12 +5,14 @@ class Ex2 {
 //        System.out.println("he1");
 //    }
     public static void main(String [] args) {
-        boolean i = true;
-        if (i) {
-            System.out.printf("1");
-        } else {
-            System.out.printf("2");
-        }
+        String b = "zys";
+        String a = """
+            asd123 `${b}` ${myFunction()}  asd""";
+        System.out.println(a);
+    }
+
+    public static String myFunction() {
+        return "new string";
     }
 
 //    public static void print(String b, int... a) {

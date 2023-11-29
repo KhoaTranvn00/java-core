@@ -20,9 +20,9 @@ public class GrilOufit {
 
     public static void main(String[] args) {
         Outfit o = new Outfit();
-//        o.setType("123");
-        Girl g = new Girl(o) ;
-        System.out.println(getOutfitType(null));
+        o.setType("123");
+        Girl g = new Girl(null) ;
+        System.out.println(getOutfitType(g));
     }
 }
 
