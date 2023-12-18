@@ -10,9 +10,9 @@ public class PassByValue {
 //        System.out.println(i);
         Student s = new Student("a");
         changeObject(s);
-        System.out.println(s.name);         // a
+        System.out.println(s.name);
         justChangePropertyObject(s);
-        System.out.println(s.name);         // c
+        System.out.println(s.name);
         List<String> al = new ArrayList<>();
         al.add("a");
         changeArrayList(al);

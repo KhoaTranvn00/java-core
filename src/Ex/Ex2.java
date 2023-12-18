@@ -5,10 +5,14 @@ class Ex2 {
 //        System.out.println("he1");
 //    }
     public static void main(String [] args) {
-        String b = "zys";
-        String a = """
-            asd123 `${b}` ${myFunction()}  asd""";
-        System.out.println(a);
+        String textBlock =
+            """
+            This is a long line that exceeds the 120-character limit. " +
+            "So, we break it into multiple lines using concatenation and " +
+            "line continuation. This helps maintain readability.";
+            """;
+
+        System.out.println(textBlock);
     }
 
     public static String myFunction() {

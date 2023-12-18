@@ -33,25 +33,42 @@ public class Ex1 {
             productList.stream().map(Product::getName).toList();
         System.out.println("collectorCollection " + collectorCollection);
 
-        Map<Integer, List<Product>> groupingBy = productList.stream()
-            .collect(Collectors.groupingBy(product -> product.getPrice()));
-        System.out.println("groupingBy " + groupingBy);
 
 
-        Map<Boolean, List<Product>> mapPartioned = productList.stream()
-            .collect(Collectors.partitioningBy(element -> element.getPrice() > 15));
-        System.out.println("mapPartioned " + mapPartioned);
-        Map<Boolean, List<Product>> mapPartioned2 = productList.stream()
-            .collect(Collectors.groupingBy(element -> element.getPrice() > 15));
-        System.out.println("mapPartioned " + mapPartioned2);
 
-        String listToString = productList.stream().map(Product::getName)
-            .collect(Collectors.joining(",890 ", "[[[", "99]"));
 
-        System.out.println("listToString " + listToString);
 
-        IntStream intStreamParallel = IntStream.range(1, 150);
-        intStreamParallel.forEach(System.out::println);
+
+
+
+
+
+//        System.out.println("collectorCollection " + collectorCollection);
+
+//        Map<Integer, List<Product>> groupingBy = productList.stream()
+//            .collect(Collectors.groupingBy(product -> product.getPrice()));
+//        System.out.println("groupingBy " + groupingBy);
+//
+//
+//        Map<Boolean, List<Product>> mapPartioned = productList.stream()
+//            .collect(Collectors.partitioningBy(element -> element.getPrice() > 15));
+//        System.out.println("mapPartioned " + mapPartioned);
+//        Map<Boolean, List<Product>> mapPartioned2 = productList.stream()
+//            .collect(Collectors.groupingBy(element -> element.getPrice() > 15));
+//        System.out.println("mapPartioned " + mapPartioned2);
+//
+//        String listToString = productList.stream().map(Product::getName)
+//            .collect(Collectors.joining(",890 ", "[[[", "99]"));
+//
+//        System.out.println("listToString " + listToString);
+//
+//        IntStream intStreamParallel = IntStream.range(1, 150);
+//        intStreamParallel.forEach(System.out::println);
+    }
+
+    public static int getInt() {
+        System.out.println("getInt run ");
+        return 3;
     }
 }
 
