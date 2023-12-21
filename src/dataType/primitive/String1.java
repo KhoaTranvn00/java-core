@@ -8,8 +8,8 @@ public class String1 {
         boolean ab =  a==b;
         boolean ac =  a==c;
 
-        System.out.println("a=b  is, " + ab);   // true because it just gets from String pool
-        System.out.println("a=c  is, " + ac);   // false because c was created by other way. not in String pool
+        System.out.println("a=b  is, " + ab);               // true because it just gets from String pool
+        System.out.println("a=c  is, " + ac);               // false because c was created by other way. not in String pool
         System.out.println("a.equal(b) is " + a.equals(c)); // We need use equals method for this case
         System.out.println("a.equal(b) is " + a.equals(b));
     }

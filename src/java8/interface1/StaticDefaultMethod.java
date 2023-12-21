@@ -4,6 +4,8 @@ public class StaticDefaultMethod {
     public static void main(String[] args) {
         String a = Vehicle.staticMethod();
         System.out.println(a);
+        Vehicle.staticMethod();
+//        Car.staticMethod()    // can't access static method interface by class
     }
 }
 
@@ -18,7 +20,7 @@ interface Vehicle {
 }
 
 class Car implements Vehicle {
-//    @Override
+//    @Override                           // cant not override static method interface
 //    public String staticMethod() {
 //        return Vehicle.super.defaultMethod();
 //    }
